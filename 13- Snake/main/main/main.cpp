@@ -84,8 +84,10 @@ int main()
 						direction = 'D';
 						score = 0;
 					}
-				if (event.key.code == sf::Keyboard::Z)
+				if (event.key.code == sf::Keyboard::Z) {
 					snake.addBody();
+					score += 1;
+				}
 			}
 		}
 
